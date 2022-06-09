@@ -15,10 +15,6 @@
 
 ## Option 1: Robo Advisor for Retirement Plans
 
-![Robot](Images/robot.jpg)
-
-_Photo by [Alex Knight](https://www.pexels.com/@alex-knight-1272316?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/high-angle-photo-of-robot-2599244/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
-
 ### Background
 
 Since machine learning and NLP are disrupting finance, I have decided to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
@@ -153,32 +149,6 @@ After successfully testing your code, open the Amazon Lex Console and navigate t
 
 ![Robo Advisor test with Lambda](Images/bot-test-with-lambda.gif)
 
-### Submission
-
-You should create a brand new repository in GitHub and upload the following files to your repo.
-
-- A python script with your final lambda function.
-
-- From the Amazon Lex Console, export your bot, intent, and slot using `Amazon Lex` as the target platform, and upload the ZIP files to your repo.
-
-- Create a short video or animated GIF showing a demo of your Robo Advisor in action from the test window. Upload the video or animated GIF file to your repo.
-
-Once you have uploaded all the files into the repo, post a link to your homework's repository in BootCamp Spot.
-
-### Hints
-
-- Make sure your intent and slot names are named correctly in your Lambda code. The names in Lex should match the names in Lambda exactly:
-
-![Lex_Names1](Images/Lex_names1.png)
-![Lex_Names2](Images/Lex_names2.png)
-
-- You may have to refresh the Lex intent page after creating the custom slot and the lambda function in order to see them in the options.
-
-- If you are using a Mac, you can create a screen-recording using the built-in QuickTime player. Follow [this link](https://support.apple.com/en-us/HT208721#quicktime) to learn more.
-
-- If you are using Windows 10, you can create a screen-recording using the built-in Xbox Game Bar. Follow [this link](https://beta.support.xbox.com/help/friends-social-activity/share-socialize/record-game-clips-game-bar-windows-10) to learn more.
-
----
 
 ## Option 2: Clustering Crypto
 
@@ -318,122 +288,6 @@ Perform the following tasks:
 
 - [Install External Libraries and Kernels in Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-add-external.html)
 
-### Submission
 
-- Code your solution using the provided starter Jupyter notebook.
-
-- For the _Challenge_ section, create a new Jupyter notebook named `crypto_clustering_sm.ipynb` and include the necessary code to import the additional required library.
-
-- Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
-
-### Requirements
-
-<details>
-<summary>Option 1: Robo Advisor for Retirement Plans</summary>
-
-#### Initial RoboAdvisor Configuration (35 points)
-
-##### To receive all points, your code must:
-
-- Create a RoboAdvisor with the requested parameters. (10 points)
-- Create the RecommendPortfolio intent and configure it with the proper name utterances. (10 points)
-- Create the RiskLevel custom slot with proper card slots. (10 points)
-- Build and test the RoboAdvisor with the default error handling configuration. (5 points)
-
-#### Enhance RoboAdvisor with Amazon Lambda Function (35 points)
-
-##### To receive all points, your code must:
-
-- Validate the user's input. (9 points)
-- Provide an "Investment Portfolio Recommendation" based on the user's selected risk values. (9 points)
-- Test your Lambda Function with the provided sample test cases. (8 points)
-- Integrate your Lambda Function with the RoboAdvisor. (9 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-- Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-- Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-- Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-- Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-- Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-- Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-- Be well commented with concise, relevant notes that other developers can understand. (10 points)
-
-</details>
-
-<details>
-<summary>Option 2: Clustering Crypto</summary>
-
-#### Data Preprocessed (18 points)
-
-##### To receive all points, your code must:
-
-- Load the data into a Pandas DataFrame named `crypto_df`. (9 points)
-- Complete all assigned data preprocessing tasks. (9 points)
-
-#### Data Dimension Reduced (12 points)
-
-##### To receive all points, your code must:
-
-- Use the PCA algorithm from sklearn to reduce dimensions. (7 points)
-- Create a DataFrame named `pcs_df` using `crypto_df.index` as the index. (5 points)
-
-#### Cryptocurrency Clustered (25 points)
-
-##### To receive all points, your code must:
-
-- Use K-Means to cluster the cryptocurrencies using PCA data. (7 points)
-- Use the Elbow Curve with the `pcs_df` DataFrame to find the best value for k. (7 points)
-- Use the Kmeans algorithm to predict the k clusters for the cryptocurrency data. (7 points)
-- Create a new DataFrame named `clustered_df` that includes the assigned columns and index. (4 points)
-
-#### Visualizing Results (15 points)
-
-##### To receive all points, your code must:
-
-- Create a Data table with the assigned columns using `hvplot.table` for all current tradable cryptocurrencies. (8 points)
-- Create a scatter plot using `hvplot.scatter` that presents the clustered data using the assigned parameters. (7 points)
-
-#### Optional Bonus: AWS Sagemaker Deployment (20 points)
-
-##### To receive all points, your code must:
-
-- Optional: Upload and deploy the Jupyter notebook using Amazon SageMaker. (20 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-- Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-- Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-- Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-- Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-- Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-- Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-- Be well commented with concise, relevant notes that other developers can understand. (10 points)
-
-</details>
 
 
